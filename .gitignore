@@ -22,7 +22,7 @@ mvnw.cmd
 /out-tsc
 
 # dependencies
-/node_modules
+node_modules
 
 # IDEs and editors
 /.idea
@@ -31,14 +31,6 @@ mvnw.cmd
 .c9/
 *.launch
 .settings/
-*.sublime-workspace
-
-# IDE - VSCode
-.vscode/*
-!.vscode/settings.json
-!.vscode/tasks.json
-!.vscode/launch.json
-!.vscode/extensions.json
 
 # misc
 /.sass-cache
@@ -54,5 +46,4 @@ testem.log
 /e2e/*.map
 
 # System Files
-.DS_Store
 Thumbs.db
