@@ -14,8 +14,6 @@ public interface BasketRepository extends CrudRepository<Basket, Long> {
             + "WHERE user_id = :userId GROUP BY product_id", nativeQuery = true)
     List<BasketRepoDto> findBasketSummaryByUserId(@Param("userId") Long userId);
 
-    Basket save(Basket basket);
-
     void deleteByProductIdAndSizeIdAndUserId(Long productId, Long sizeId, Long userId);
 
 }
