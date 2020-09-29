@@ -8,4 +8,6 @@ public interface StockRepository extends CrudRepository<Stock, Long> {
 
     List<Stock> findAllByProductId(Long productId);
 
+    Stock findByProductIdAndSizeId(Long productId, Long sizeId);
+
 }
